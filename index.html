@@ -5,23 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>HOLA MUNDO TEST</h1><br/>
+    <h1>TEST DE FORMULARIO</h1><br/>
     <div>
         <p>Esto es un formulario:</p><br/>
+        <ul>
         <form>
-            <label for="nom">Nombre:</label><br>
+            <label for="nombre">Nombre:</label><br>
             <input type="text" id="fname" name="fname"><br>
+
             <label for="apes">Apellidos:</label><br>
-            <input type="text" id="lname" name="lname">
+            <input type="text" id="lname" name="lname"><br>
+
             <label for="direccion">Dirección:</label><br>
-            <label for="casado">Estado civil: </label>
+            <input type="text" id="direccion" name="direccion"><br>
+            
+            <label for="casado">Estado civil: </label><br>
             <input type="radio" id="soltero" name="estado_civil" value="Soltero">
+            <label for="soltero">Soltero </label><br>
             <input type="radio" id="casado" name="estado_civil" value="Casado">
+            <label for="casado">Casado </label><br>
             <input type="radio" id="divorciado" name="estado_civil" value="Divorciado">
+            <label for="divorciado">Divorciado</label><br><br>
+
             <input type="submit" value="Enviar formulario">
           </form>
+        </ul>
     </div>
     
 
