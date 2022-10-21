@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="contenedorFormulario">
+        
+        <form name="formulario">
+        
+            <h1>Contacta con nosotros</h1>
+            <input type="text" name="Nombre" pattern="[a-zA-Z0-9 ]{2,}" placeholder="Inserte su nombre" title="Utiliza solo letras" required>
+            <input type="text" name="Apellidos" pattern="[a-zA-Z0-9 ]+" placeholder="Inserte sus apellidos" title="Utiliza solo letras" required>
+            <input type="email" name="EMail" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" size="30" title="Utiliza el siguiente formato: example@hosting.dominio"placeholder="Inserte email" required>
+            <input type="tel" name="Telf" maxlength="11" placeholder="Inserte telefono" title="El número de teléfono debe ser de 9 a 10 dígitos" required>
+            <input type="text" name="Dni" placeholder="Inserte su DNI" pattern="^[0-9]{8,8}[A-Za-z]$" title="Debes incluir 8 dígitos y una letra: 12345678A" maxlength="9" required>
+            <input type="text" name="Iban" placeholder="Inserte su IBAN" pattern="^(?:(?:IT|SM)\d{2}[A-Z]\d{22}|CY\d{2}[A-Z]\d{23}|NL\d{2}[A-Z]{4}\d{10}|LV\d{2}[A-Z]{4}\d{13}|(?:BG|BH|GB|IE)\d{2}[A-Z]{4}\d{14}|GI\d{2}[A-Z]{4}\d{15}|RO\d{2}[A-Z]{4}\d{16}|KW\d{2}[A-Z]{4}\d{22}|MT\d{2}[A-Z]{4}\d{23}|NO\d{13}|(?:DK|FI|GL|FO)\d{16}|MK\d{17}|(?:AT|EE|KZ|LU|XK)\d{18}|(?:BA|HR|LI|CH|CR)\d{19}|(?:GE|DE|LT|ME|RS)\d{20}|IL\d{21}|(?:AD|CZ|ES|MD|SA)\d{22}|PT\d{23}|(?:BE|IS)\d{24}|(?:FR|MR|MC)\d{25}|(?:AL|DO|LB|PL)\d{26}|(?:AZ|HU)\d{27}|(?:GR|MU)\d{28})$" required>
+            <input type="text" name="Swift" placeholder="Inserte SWIFT" maxlength="12" pattern="[^A-Za-z0-9]{8,11}" required>
+            <input type="text" name="Usuario" placeholder="Inserte nombre de usuario" maxlength="15" pattern="[a-zA-Z0-9]{8,11}" required>
+            <input type="date" name="Fecha" placeholder="Introduce fecha de nacimiento" value="2022-10-10" min="1950-01-01" max="2008-12-31" required>
+            <input type="submit" class="botonSubmit" value="Enviar formulario" onclick="validarFormulario()">
+            <input type="reset" class="botonReset" value="Resetear campos" onclick="confirmacion()">
+        
+        </form>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Montserrat';
+}
+body {
+     font-family: sans-serif;
+     background: #3e3d3d;
+}
+
+.contenedorFormulario{ 
+    background: #696464; 
+    width: 320px; 
+    padding: 40px 20px; 
+    box-sizing: border-box; 
+    position: fixed; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+}
+h1{
+    text-align: center; 
+    color: #fff; 
+    font-weight: normal; 
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%; 
+    background: none; 
+    border: 1px solid #fff; 
+    border-radius: 3px; 
+    padding: 6px 15px; 
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+    font-size: 16px; 
+    color: #fff;
+}
+
+.botonReset, .botonSubmit{ 
+    background: #bac675; 
+    border: 0; 
+    cursor: pointer; 
+    color: #3e3d3d;
+}
+input[type="button"]:hover{ 
+    background: #a4b15c; 
+    transition: .6s;
+}
+input:invalid{
+    border: 2px dashed red;
+}
+input:valid{
+    border: 2px dashed green;
+}
+
+::placeholder{
+    color: #fff;
+}
