@@ -180,3 +180,45 @@ function myAlert(msg){
     $("body").insertBefore(div,$("body").firstChild);
     bind_close();
 }
+
+//Split
+var Stringeazo = "A,b,c,d,e,f,2,3,44,43";
+var testArray = testString.split(",");
+console.log(Stringeazo);
+
+//Join
+var testJoin = testArray.join(".");
+console.log(testJoin);
+
+//Filter
+var testArray4 = [10,2,3,5,9];
+var pairNumber = testArray.filter((num))=>{
+    return num%2==0;
+}
+console.log(pairNumber);
+
+
+//Callbacks
+setTimeout(function(){
+    console.log("Hello World!");
+}, 2500);
+
+//Closures
+document.getElementById("btn").addEventListener("click",()=>{
+    console.log("Click detected");
+})
+
+//JSON
+var course = {
+    title: "Course JS",
+    section: 4,
+    subsection: 6,
+    teacher: "Yo",
+    intro: function(){
+        console.log("Welcome to "+this.title+" with "+this.section+" sections")
+    },
+    function2: function(){
+        console.log("Segunda function");
+    }
+}
+console.log(course["intro"]);
